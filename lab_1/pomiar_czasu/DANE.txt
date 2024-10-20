@@ -1,0 +1,117 @@
+DANE
+
+WERSJA ZOPTYMALIZOWANA:
+1. ---------------------------------------------
+Czas wykonania 100000 operacji wejscia/wyjscia: 
+czas standardowy = 0.022782
+czas CPU         = 0.010766
+czas zegarowy    = 0.084172
+
+Czas wykonania 100000 operacji arytmetycznych: 
+Czas zegara: 0.000278
+Czas CPU: 0.000149
+Wynik operacji arytmetycznych: 1.210343
+
+2. ---------------------------------------------
+Czas wykonania 100000 operacji wejscia/wyjscia: 
+czas standardowy = 0.013889
+czas CPU         = 0.011318
+czas zegarowy    = 0.081618
+
+Czas wykonania 100000 operacji arytmetycznych: 
+Czas zegara: 0.000237
+Czas CPU: 0.000189
+Wynik operacji arytmetycznych: 1.210343
+
+3. ---------------------------------------------
+Czas wykonania 100000 operacji wejscia/wyjscia: 
+czas standardowy = 0.016133
+czas CPU         = 0.011338
+czas zegarowy    = 0.055182
+
+Czas wykonania 100000 operacji arytmetycznych: 
+Czas zegara: 0.001643
+Czas CPU: 0.000942
+Wynik operacji arytmetycznych: 1.210343
+
+4. ---------------------------------------------
+Czas wykonania 100000 operacji wejscia/wyjscia: 
+czas standardowy = 0.015419
+czas CPU         = 0.008584
+czas zegarowy    = 0.079366
+
+Czas wykonania 100000 operacji arytmetycznych: 
+Czas zegara: 0.002459
+Czas CPU: 0.000386
+Wynik operacji arytmetycznych: 1.210343
+
+5. ---------------------------------------------
+Czas wykonania 100000 operacji wejscia/wyjscia: 
+czas standardowy = 0.019974
+czas CPU         = 0.011061
+czas zegarowy    = 0.077833
+
+Czas wykonania 100000 operacji arytmetycznych: 
+Czas zegara: 0.000467
+Czas CPU: 0.000468
+Wynik operacji arytmetycznych: 1.210343
+
+------------------------------------------------------------------------
+
+WERSJA Z DEBUGOWANIEM:
+1. ---------------------------------------------
+Czas wykonania 100000 operacji wejscia/wyjscia: 
+czas standardowy = 0.019808
+czas CPU         = 0.014937
+czas zegarowy    = 0.089148
+
+Czas wykonania 100000 operacji arytmetycznych: 
+Czas zegara: 0.001921
+Czas CPU: 0.001169
+Wynik operacji arytmetycznych: 1.210343
+
+2. ---------------------------------------------
+Czas wykonania 100000 operacji wejscia/wyjscia: 
+czas standardowy = 0.013687
+czas CPU         = 0.006112
+czas zegarowy    = 0.059638
+
+Czas wykonania 100000 operacji arytmetycznych: 
+Czas zegara: 0.000392
+Czas CPU: 0.000196
+Wynik operacji arytmetycznych: 1.210343
+
+3. ---------------------------------------------
+Czas wykonania 100000 operacji wejscia/wyjscia: 
+czas standardowy = 0.023802
+czas CPU         = 0.019666
+czas zegarowy    = 0.074275
+
+Czas wykonania 100000 operacji arytmetycznych: 
+Czas zegara: 0.000396
+Czas CPU: 0.000326
+Wynik operacji arytmetycznych: 1.210343
+
+4. ---------------------------------------------
+Czas wykonania 100000 operacji wejscia/wyjscia: 
+czas standardowy = 0.020546
+czas CPU         = 0.015625
+czas zegarowy    = 0.068781
+
+Czas wykonania 100000 operacji arytmetycznych: 
+Czas zegara: 0.000451
+Czas CPU: 0.000338
+Wynik operacji arytmetycznych: 1.210343
+
+5. ---------------------------------------------
+Czas wykonania 100000 operacji wejscia/wyjscia: 
+czas standardowy = 0.017800
+czas CPU         = 0.009448
+czas zegarowy    = 0.078292
+
+Czas wykonania 100000 operacji arytmetycznych: 
+Czas zegara: 0.000386
+Czas CPU: 0.000236
+Wynik operacji arytmetycznych: 1.210343
+
+------------------------------------------------------------------------

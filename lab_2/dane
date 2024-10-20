@@ -1,0 +1,111 @@
+Wersja do debugowania: (fork.c)
+--------------------------------------------------
+czas standardowy = 0.105184
+czas CPU         = 0.011772
+czas zegarowy    = 0.367302
+Narzut na stworzenie jednego procesu: 0.000367
+--------------------------------------------------
+czas standardowy = 0.099523
+czas CPU         = 0.003539
+czas zegarowy    = 0.364227
+Narzut na stworzenie jednego procesu: 0.000364
+--------------------------------------------------
+czas standardowy = 0.102824
+czas CPU         = 0.009206
+czas zegarowy    = 0.354392
+Narzut na stworzenie jednego procesu: 0.000354
+--------------------------------------------------
+czas standardowy = 0.124306
+czas CPU         = 0.000000
+czas zegarowy    = 0.431705
+Narzut na stworzenie jednego procesu: 0.000432
+--------------------------------------------------
+czas standardowy = 0.118374
+czas CPU         = 0.008839
+czas zegarowy    = 0.430439
+Narzut na stworzenie jednego procesu: 0.000431
+--------------------------------------------------
+
+Wersja do debugowania: (clone.c)
+czas standardowy = 0.034692
+czas CPU         = 0.000000
+czas zegarowy    = 0.129691
+Narzut na stworzenie jednego procesu: 0.000130
+--------------------------------------------------
+czas standardowy = 0.036545
+czas CPU         = 0.000000
+czas zegarowy    = 0.129213
+Narzut na stworzenie jednego procesu: 0.000129
+--------------------------------------------------
+czas standardowy = 0.034692
+czas CPU         = 0.000000
+czas zegarowy    = 0.129691
+Narzut na stworzenie jednego procesu: 0.000130
+--------------------------------------------------
+czas standardowy = 0.035832
+czas CPU         = 0.000000
+czas zegarowy    = 0.118417
+Narzut na stworzenie jednego procesu: 0.000118
+--------------------------------------------------
+czas standardowy = 0.028442
+czas CPU         = 0.000000
+czas zegarowy    = 0.078241
+Narzut na stworzenie jednego procesu: 0.000078
+--------------------------------------------------
+
+Wersja zoptymalizowana: (fork.c)
+--------------------------------------------------
+czas standardowy = 0.080375
+czas CPU         = 0.009533
+czas zegarowy    = 0.273749
+Narzut na stworzenie jednego procesu: 0.000274
+--------------------------------------------------
+czas standardowy = 0.087992
+czas CPU         = 0.004548
+czas zegarowy    = 0.316666
+Narzut na stworzenie jednego procesu: 0.000317
+--------------------------------------------------
+czas standardowy = 0.092587
+czas CPU         = 0.000000
+czas zegarowy    = 0.315326
+Narzut na stworzenie jednego procesu: 0.000315
+--------------------------------------------------
+czas standardowy = 0.093683
+czas CPU         = 0.005393
+czas zegarowy    = 0.336548
+Narzut na stworzenie jednego procesu: 0.000337
+--------------------------------------------------
+czas standardowy = 0.102939
+czas CPU         = 0.003520
+czas zegarowy    = 0.384758
+Narzut na stworzenie jednego procesu: 0.000385
+--------------------------------------------------
+
+Wersja zoptymalizowana: (clone.c)
+--------------------------------------------------
+czas standardowy = 0.021267
+czas CPU         = 0.000000
+czas zegarowy    = 0.059700
+Narzut na stworzenie jednego procesu: 0.000060
+--------------------------------------------------
+czas standardowy = 0.021962
+czas CPU         = 0.000000
+czas zegarowy    = 0.061304
+Narzut na stworzenie jednego procesu: 0.000061
+--------------------------------------------------
+czas standardowy = 0.036662
+czas CPU         = 0.002672
+czas zegarowy    = 0.131309
+Narzut na stworzenie jednego procesu: 0.000131
+--------------------------------------------------
+czas standardowy = 0.024368
+czas CPU         = 0.000000
+czas zegarowy    = 0.066765
+Narzut na stworzenie jednego procesu: 0.000067
+--------------------------------------------------
+czas standardowy = 0.021812
+czas CPU         = 0.002538
+czas zegarowy    = 0.057175
+Narzut na stworzenie jednego procesu: 0.000057
+--------------------------------------------------
+
