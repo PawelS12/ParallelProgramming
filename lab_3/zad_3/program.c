@@ -21,7 +21,7 @@ void * tworzenie_watkow (void * arg_wsk) {
 int main() {
     pthread_t watki[LICZBA_WATKOW];
     struktura tab[LICZBA_WATKOW];
-    double a = -5.0, b = 5.0;
+    double a = 0, b = 10.0;
     double suma = 0;
     double fragment = (b - a) / LICZBA_WATKOW;
     

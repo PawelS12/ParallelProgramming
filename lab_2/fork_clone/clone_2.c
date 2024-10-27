@@ -6,7 +6,7 @@
 #include <sys/wait.h>
 #include <sched.h>
 #include <linux/sched.h>
-#include "../pomiar_czasu/pomiar_czasu.h"
+#include "pomiar_czasu.h"
 
 int zmienna_globalna = 0; 
 

@@ -13,12 +13,7 @@ int zmienna_globalna=0;
 
 #define ROZMIAR_STOSU 1024*64
 
-/*int funkcja_watku( void* argument )
-{
-  zmienna_globalna++;
-  
-  return 0;
-} */
+
 
 int funkcja_watku( void* argument )
 {
