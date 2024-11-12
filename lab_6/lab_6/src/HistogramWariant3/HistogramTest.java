@@ -1,4 +1,4 @@
-package HistogramWariant2;
+package HistogramWariant3;
 import java.util.Scanner;
 
 public class HistogramTest {
@@ -15,19 +15,19 @@ public class HistogramTest {
 
         Obraz obraz1 = new Obraz(n, m);
 
-        int range = 94 / numThreads;
+        int rowsPerThread = n / numThreads;
+        int extraRows = n % numThreads;
         Thread[] threads = new Thread[numThreads];
 
         for (int i = 0; i < numThreads; i++) {
-            char startChar = (char)(33 + i * range);
-            char endChar;
-            if (i == numThreads - 1) { // Jeśli jest to ostatni wątek to zakres jest do 126, by objąć wszystkie pozostałe znaki.
-                endChar = (char)126;
-            } else {
-                endChar = (char)(33 + (i + 1) * range - 1); // ostatni znak w zakresie wątku
+            int startRow = i * rowsPerThread;
+            int endRow = (i + 1) * rowsPerThread - 1;
+
+            if (i == numThreads - 1) {
+                endRow += extraRows;
             }
 
-            threads[i] = new Thread(new HistogramThread(i + 1, startChar, endChar, obraz1));
+            threads[i] = new Thread(new HistogramThread(i + 1, startRow, endRow, obraz1));
             threads[i].start();
         }
 
@@ -38,6 +38,8 @@ public class HistogramTest {
                 e.printStackTrace();
             }
         }
+
+        obraz1.printEntireHistogram();
 
         scanner.close();
     }
