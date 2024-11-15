@@ -1,10 +1,9 @@
 package HistogramWariant1;
 
 class HistogramThread extends Thread {
-
+    private int threadNumber;
     private char symbol;
     private Obraz obraz;
-    private int threadNumber;
 
     public HistogramThread(int threadNumber, char symbol, Obraz obraz) {
         this.threadNumber = threadNumber;
@@ -14,16 +13,7 @@ class HistogramThread extends Thread {
 
     @Override
     public void run() {
-        try {
-            obraz.updateHistogram(symbol);
-            obraz.printHistogram(threadNumber, symbol);
-
-            if (Thread.interrupted()) {
-                throw new InterruptedException();
-            }
-
-        } catch (InterruptedException e) {
-            System.out.println("Wątek został przerwany: " + e.getMessage());
-        }
+        obraz.updateHistogramParallel(symbol);
+        obraz.printHistogram(threadNumber, symbol);
     }
 }

@@ -12,11 +12,12 @@ class HistogramTest {
         int m = scanner.nextInt();
 
         Obraz obraz1 = new Obraz(n, m);
-        //obraz1.printEntireHistogram();
+        obraz1.calculateHistogram();
+
         HistogramThread[] threads = new HistogramThread[94];
 
         for (int i = 0; i < 94; i++) {
-            threads[i] = new HistogramThread(i + 1, (char)(i + 33), obraz1); // od 33 - widoczne znaki
+            threads[i] = new HistogramThread(i + 1, (char)(i + 33), obraz1);
             threads[i].start();
         }
 
@@ -27,6 +28,7 @@ class HistogramTest {
                 e.printStackTrace();
             }
         }
+        obraz1.verifyHistograms();
 
         scanner.close();
     }

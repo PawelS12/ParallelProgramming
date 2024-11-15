@@ -15,7 +15,7 @@ public class HistogramThread implements Runnable {
 
     @Override
     public void run() {
-        obraz.updateHistogram(startChar, endChar);
+        obraz.updateHistogramParallel(startChar, endChar);
 
         for (char c = startChar; c <= endChar; c++) {
             obraz.printHistogram(threadNumber, c);
