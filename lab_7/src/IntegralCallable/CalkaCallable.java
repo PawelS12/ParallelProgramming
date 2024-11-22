@@ -14,7 +14,7 @@ public class CalkaCallable implements Callable<Double> {
         this.xk = xk;
         this.N = (int) Math.ceil((xk - xp) / dx);
         this.dx = (xk - xp) / N;
-        System.out.println("Creating an instance of CalkaSekwencyjna.IntegralCallable.CalkaCallable");
+        System.out.println("Creating an instance:");
         System.out.println("xp = " + xp + ", xk = " + xk + ", N = " + N);
         System.out.println("dx requested = " + dx + ", dx final = " + this.dx);
 

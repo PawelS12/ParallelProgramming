@@ -8,7 +8,7 @@ class Obraz {
     private char[][] tab;
     private char[] tabSymb;
     private int[] histogram;
-    private int[] hist_parallel;
+    private int[] histParallel;
 
     public Obraz(int n, int m) {
         this.sizeN = n;
@@ -16,7 +16,7 @@ class Obraz {
         tab = new char[n][m];
         tabSymb = new char[94];
         histogram = new int[94];
-        hist_parallel = new int[94];
+        histParallel = new int[94];
 
         final Random random = new Random();
 
@@ -39,7 +39,7 @@ class Obraz {
     public synchronized void clearHistogram() {
         for (int i = 0; i < 94; i++) {
             histogram[i] = 0;
-            hist_parallel[i] = 0;
+            histParallel[i] = 0;
         }
     }
 
@@ -59,7 +59,7 @@ class Obraz {
         for (int i = 0; i < sizeN; i++) {
             for (int j = 0; j < sizeM; j++) {
                 if (tab[i][j] == symbol) {
-                    hist_parallel[symbolIndex]++;
+                    histParallel[symbolIndex]++;
                 }
             }
         }
@@ -67,7 +67,7 @@ class Obraz {
 
     public synchronized void printHistogram(int threadNumber, char symbol) {
         int symbolIndex = symbol - 33;
-        int count = hist_parallel[symbolIndex];
+        int count = histParallel[symbolIndex];
         System.out.print("Thread " + threadNumber + ": " + symbol + " ");
         for (int i = 0; i < count; i++) {
             System.out.print("=");
@@ -83,22 +83,22 @@ class Obraz {
 
     public void printEntireParallelHistogram() {
         for (int i = 0; i < 94; i++) {
-            System.out.print(tabSymb[i] + " " + hist_parallel[i] + "\n");
+            System.out.print(tabSymb[i] + " " + histParallel[i] + "\n");
         }
     }
 
     public void verifyHistograms() {
         boolean isEqual = true;
         for (int i = 0; i < 94; i++) {
-            if (histogram[i] != hist_parallel[i]) {
-                System.out.println("Mismatch found for symbol " + tabSymb[i] + ": sekwencyjnie = " + histogram[i] + ", rownolegle = " + hist_parallel[i]);
+            if (histogram[i] != histParallel[i]) {
+                System.out.println("Mismatch found for symbol " + tabSymb[i] + ": sequentially = " + histogram[i] + ", parallelly = " + histParallel[i]);
                 isEqual = false;
             }
         }
         if (isEqual) {
-            System.out.println("Histogramy pasuja do siebie");
+            System.out.println("The histograms match.");
         } else {
-            System.out.println("Histogramy nie pasuja.");
+            System.out.println("The histograms do not match.");
         }
     }
 }
