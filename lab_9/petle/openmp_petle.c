@@ -4,7 +4,7 @@
 #include <omp.h>
 
 #define WYMIAR 10
-#define WARIANT 2
+#define WARIANT 4
 
 int main () {
     double a[WYMIAR][WYMIAR];
