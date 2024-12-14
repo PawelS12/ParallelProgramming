@@ -5,7 +5,7 @@
 extern void bariera_init(int);
 extern void bariera(void);
 
-#define LICZBA_W 10
+#define LICZBA_W 5
 
 pthread_t watki[LICZBA_W];
 
