@@ -50,8 +50,8 @@ int main () {
       #pragma omp parallel for reduction(+:suma_parallel) schedule(dynamic) num_threads(4) ordered
       for(int i = 0; i < WYMIAR; i++) {
         suma_parallel += a[i][j];
-      #pragma omp ordered
-      printf("(%1d,%1d)-W_%1d ", i, j, omp_get_thread_num()); 
+        #pragma omp ordered
+        printf("(%1d,%1d)-W_%1d ", i, j, omp_get_thread_num()); 
       }
       printf("\n");
     }

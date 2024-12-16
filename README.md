@@ -1,1 +1,1 @@
-Parerell Programming in C and Java
+Parerell Programming in C (PTHREADS, OpenMP, MPI) and Java
